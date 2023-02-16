@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Lift</title>
+</head>
+
+<body id="body">
+    <div id="lift">
+        <div id="centerLine">
+            <div id="thirdFD"></div>
+            <div id="secondFD"></div>
+            <div id="firstFD"></div>
+            <div id="groundFD"></div>
+            <div id="LiftHolder">
+                <img id="closeDoorLift" src="lift.svg" alt="">
+                <img id="openDoorLift" src="openLift.svg" alt="">
+            </div>
+            <div id="wallKeys">
+                <div class="wallKey" onclick="makeRequest(1,4)">
+                    <button class="btn btn-primary" onclick="floorRequest(3)">↕</button>
+               
+                </div>
+                <div class="wallKey" onclick="makeRequest(1,3)">
+                    <button class="btn btn-primary" onclick="floorRequest(2)">↕</button>
+                  
+                </div>
+                
+                <div class="wallKey" onclick="makeRequest(1,2)">
+                    <button class="btn btn-primary" onclick="floorRequest(1)">↕</button>
+                    
+                </div>
+                <div class="wallKey" onclick="makeRequest(1,1)">
+                   <button class="btn btn-primary" onclick="floorRequest(0)">↕</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
